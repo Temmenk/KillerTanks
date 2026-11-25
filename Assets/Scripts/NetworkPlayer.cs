@@ -10,6 +10,9 @@ public class NetworkPlayer : MonoBehaviourPun
 
     void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
         Debug.Log("Player ownership: " + photonView.IsMine);
         if (photonView.IsMine)
         {

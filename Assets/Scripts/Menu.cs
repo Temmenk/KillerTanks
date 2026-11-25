@@ -32,6 +32,7 @@ public class Menu : MonoBehaviourPunCallbacks, ILobbyCallbacks
         findRoomButton.interactable = PhotonNetwork.IsConnectedAndReady;
         // enable the cursor since we hide it when we play the game
         Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         // are we in a game?
         if (PhotonNetwork.InRoom)
         {
